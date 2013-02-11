@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<meta charset=utf-8>
+		<title>CSS3 Card Flipping</title>
+		<link rel="stylesheet" href="css/css3flip.css" />
+	</head>
+	<body>
+		<header>
+			<h1>CSS3 Card Flipping</h1>
+		</header>
+		<section id="game">
+			<div id="dack">
+				<div class="cards back"></div>
+			</div>
+		</section>
+		<!-- #game -->
+		<footer>
+			<p>
+				This is an example of flipping cards with CSS3.
+			</p>
+			<p>
+				Click on the card to flip.
+			</p>
+		</footer>
+		<script src="js/jquery-1.6.min.js"></script>
+		<script>
+			$(function() {
+				for(var i = 0; i < 11; i++) {
+					$(".cards:first-child").clone().appendTo("#dack");
+				}
+
+				$("#dack").children().each(function(index) {
+					// align the cards to be 4x3 ourselves.
+					$(this).css({
+						"left" : ($(this).width() + 20) * (index % 4),
+						"top" : ($(this).height() + 20) * Math.floor(index / 4)
+
+					});
+				});
+			});
+
+		</script>
+	</body>
+</html>

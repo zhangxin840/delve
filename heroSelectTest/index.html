@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Hero Select Test</title>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif:regular,bold&subset=latin' rel='stylesheet' type='text/css'>
+		<link href="http://fonts.googleapis.com/css?family=Orbitron:400,700" rel="stylesheet" type="text/css" >
+		<link rel="stylesheet" href="css/test.css" />
+	</head>
+	<body>
+		<div id="game">
+			<div id="topTextbox">
+				<div class="instruction">
+					Choose a hero
+				</div>
+				<div class="discription" id="discription">
+					Heal one damage when defeat a monster
+				</div>
+			</div>
+			<div id="heroCards">
+				<img src="images/hero1.gif" width="225" class="heroCard" id="hero1"/>
+				<img src="images/hero2.gif" width="225" class="heroCard" id="hero2"/>
+				<img src="images/hero3.gif" width="225" class="heroCard" id="hero3"/>
+				<img src="images/hero4.gif" width="225" class="heroCard" id="hero4"/>
+			</div>
+			<div id="popup" class="hide">
+				<img src="images/hero4.gif" width="450"  id="bigHeroCard" />
+				<div id="startButton">
+					START
+				</div>
+			</div>
+		</div>
+		<!-- #game -->
+		<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+		<script type="text/javascript" src="js/test.js"></script>
+		<script type="text/javascript" src="js/cards.js"></script>
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+/*!
+ * CSS3 Card Games Example
+ * http://gamedesign.cc/html5games/CSS3-card-basic/
+ *
+ * This is an example game for the book HTML5 Games Development: A Beginning Guide.
+ *
+ * Copyright 2010, Thomas Mak Seng Hin
+ * makzan@gmail.com
+ *
+ * All Right Reserved.
+ */
+#game {
+	background: #9c9;
+	padding: 5px;
+}
+
+.cards {
+	width: 80px;
+	height: 120px;
+	margin: 8px;
+	border-radius: 10px;
+	background: #777;
+	
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+
+.face {	
+	background: url(../images/AK.png);
+}
+
+.back {
+	background: #966;
+}
+
+.flipped{
+	background: #f00;
+	
+	-moz-transform: rotate3d(0,1,0,180deg);
+	-webkit-transform: rotate3d(0,1,0,180deg);
+	transform: rotate3d(0,1,0,180deg);
+}
+
+.rotateRight {
+	-webkit-transform: rotate3d(0,1,1,90deg);
+}
+.moveAndScale {
+	-webkit-transform: translate3d(150px,150px,0); 
+
+}

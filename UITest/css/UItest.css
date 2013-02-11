@@ -1,0 +1,48 @@
+body {
+	text-align: center;
+	font-family: 'Droid Serif', arial, serif;
+	background: #a46740 url(../images/bg.jpg);
+	color: #ccc;
+	text-shadow: 0 1px 0 #222;
+}
+/* Styles for game over popup */
+#popup {
+	font-family: 'Orbitron', serif;
+	font-size: 28px;
+	font-weight: 700;
+	text-shadow: 0px 1px 2px #fff;
+	color: #222;
+	width: auto;
+	height: auto;
+	background: rgba(0,0,0,.3);
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	-webkit-transition: all .3s ease-in;
+}
+#popup h1 {
+	font-weight: 400;
+}
+#popup-box {
+
+	background-image: url(../images/items2.gif);
+	border-radius: 10px;
+	-webkit-box-shadow: 0 5px 5px #333;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	display: -moz-box;
+	-moz-box-pack: center;
+	-moz-box-align: center;
+}
+#popup.hide {
+	background: rgba(0,0,0,0);
+	visibility: hidden;
+}
+#popup.hide #popup-box {
+}
+.option:hover {
+	-webkit-box-shadow: 0 0 20px #aaa;
+	-moz-box-shadow: 0 0 20px #aaa;
+}
+

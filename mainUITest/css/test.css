@@ -1,0 +1,108 @@
+/*!
+ * CSS3 Card Games Example
+ * http://gamedesign.cc/html5games/CSS3-matching-game/
+ * 
+ * This is an example game for the book HTML5 Games Development: A Beginning Guide.
+ * 
+ * Copyright 2010, Thomas Seng Hin Mak
+ * makzan@gmail.com
+ *   
+ * All Right Reserved.
+ */
+ 
+body {
+	background: #121c5b url(../images/background2.jpg);
+}
+
+#game {
+	border-radius: 30px;
+	border: 2px solid #555;
+	position: relative;
+	background: url(../images/gameBackground.gif);
+	width: 900px;
+	height: 640px;
+	margin: 30px auto auto auto;	
+}
+
+
+#topTextbox{
+	position:absolute;
+	margin: 60px auto auto auto;
+    text-align: center;
+    width: 100%;
+}
+
+.instruction{
+	font-family: 'Orbitron', serif;
+	font-size: 28px;
+	font-weight: 700;	  
+	text-shadow: 0px 1px 2px #ddd;
+	text-align: center;	
+	color: #ccc;
+}
+.discription{
+	font-family: 'Droid Serif', arial, serif;
+	font-size: 18px;
+	text-align: center;	
+	color: #ccc;
+	margin: 10px;
+}
+
+#heroCards {
+	width: 60%;
+	margin: 130px auto auto auto;
+}
+
+.heroCard {
+    margin: 20px;
+    border-radius: 10px;
+	-moz-transition: all .5s;
+	-webkit-transition: all .5s;
+}
+
+.heroCard:hover {
+	box-shadow: 0 0 35px #65856a;
+}
+
+
+/* Styles for game over popup */
+#popup {
+	position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 30px;	
+	background: rgba(0,0,0,.5);
+}
+
+#bigHeroCard {
+	display: block;
+	margin: 100px auto auto auto;
+	border-radius: 20px;
+}
+
+#popup.hide {
+	visibility: hidden;		
+}
+
+#startButton{
+	font-family: 'Orbitron', serif;
+	font-size: 32px;
+	font-weight: 700;	  
+	text-shadow: 0px 2px 3px #aaa;
+	text-align: center;	
+	color: #bbb;
+	margin: 10px auto auto auto;
+	border-radius: 10px;
+	width: 16%;
+	border: 5px solid #999;
+	-moz-transition: all .4s;
+	-webkit-transition: all .4s;
+	box-shadow: 3px 3px 6px #666; 
+}
+#startButton:hover{
+	color: #eee;
+	border: 5px solid #ddd;
+	box-shadow: 3px 3px 6px #999;
+}

@@ -1,0 +1,55 @@
+body {
+	text-align: center;
+	font-family: 'Droid Serif', arial, serif;
+	background: #a46740 url(../images/bg.jpg);
+	color: #ccc;
+}
+#game {
+	border-radius: 10px;
+	border: 1px solid #666;
+	background: #232 url(../images/table.jpg);
+	width: 500px;
+	height: 460px;
+	margin: 0 auto;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	display: -moz-box;
+	-moz-box-pack: center;
+	-moz-box-align: center;
+}
+#dack {
+	position: relative;
+	width: 380px;
+	height: 400px;
+}
+.cards {
+	width: 80px;
+	height: 120px;
+	border-radius: 10px;
+	background: #777;
+	position: absolute;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+}
+.cards:hover {
+	-webkit-box-shadow: 0 0 20px #aaa;
+	box-shadow: 0 0 10px #aaa;
+}
+.face {
+	background: url(../images/AK.png);
+}
+.back {
+	background: #966;
+}
+.flipped {
+	background: #f00;
+	-moz-transform: rotate3d(0,1,0,180deg);
+	-webkit-transform: rotate3d(0,1,0,180deg);
+}
+.rotateRight {
+	-webkit-transform: rotate3d(0,1,1,90deg);
+}
+.moveAndScale {
+	-webkit-transform: translate3d(150px,150px,0);
+}

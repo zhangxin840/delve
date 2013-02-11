@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<meta charset=utf-8>
+		<title>CSS3 Card Flipping</title>
+		<link rel="stylesheet" href="css/css3flip.css" />
+	</head>
+	<body>
+		<header>
+			<h1>CSS3 Card Flipping</h1>
+		</header>
+		<section id="game">
+				<div id="card1" class="cards back"></div>
+		</section>
+		<!-- #game -->
+		<footer>
+			<p>
+				This is an example of flipping cards with CSS3.
+			</p>
+			<p>
+				Click on the card to flip.
+			</p>
+		</footer>
+		<script src="js/jquery-1.6.min.js"></script>
+		<script>
+			$(function() {
+				$("#game").children().each(function(index) {
+					// listen the click event on each card DIV element.
+					$(this).click(function() {
+						// add the class "card-flipped".
+						// the browser will animate the styles between current state and card-flipped state.
+						$(this).toggleClass("flipped");
+					});
+				});
+				$("#card1").addClass("moveAndScale");
+				$("#card1").addClass("rotateRight");
+			});
+		</script>
+	</body>
+</html>
